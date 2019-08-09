@@ -17,6 +17,7 @@
           original_title: 'Delete'}} %>
 <% end %>
 
+
 	<% unless @group.name == 'Public' && is_member(@group.id) %>
 	 <br><br>All Members 
 		<table class="member-table">
@@ -37,6 +38,8 @@
 
 	<% end #unless %>
 
+
+ 
 <% else %>
 
 You do not have permission to view this page. 
